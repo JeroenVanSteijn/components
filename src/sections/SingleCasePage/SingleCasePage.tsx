@@ -198,6 +198,7 @@ const SingleCasePage: React.FC<SingleCasePageContent> = ({ intro, about, quote, 
 				}
 			})
 		}
+		{/* @ts-ignore */}
 		<CaseTeamMembers>
 			{
 				members.map(member =>

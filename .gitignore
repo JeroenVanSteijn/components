@@ -1,6 +1,4 @@
 coverage
-build
-dist
 .eslintcache
 
 # dependencies
@@ -22,4 +20,3 @@ npm-debug.log*
 
 # build
 /lib
-/public

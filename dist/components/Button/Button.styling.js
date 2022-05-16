@@ -1,0 +1,9 @@
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+import { theme } from "../../theme";
+import styled from "styled-components";
+export var ButtonStyled = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    padding: 0 1em;\n    background-color: ", ";\n    font-size: ", "em;\n    background-color: ", ";\n    color: ", ";\n    font-family: ", ";\n    font-weight: ", ";\n    cursor: pointer;\n    width: ", ";\n    height: 58px;\n    line-height: 17px;\n    display: grid;\n    grid-template-columns: 1fr 44px;\n    align-items: center;\n    border: none;\n    border-radius: 58px;\n    transition: 0.3s;\n  \n    &:hover {\n      background-color: ", ";\n      color: ", ";\n      box-shadow: 5px 5px ", ";\n    }\n"], ["\n    padding: 0 1em;\n    background-color: ", ";\n    font-size: ", "em;\n    background-color: ", ";\n    color: ", ";\n    font-family: ", ";\n    font-weight: ", ";\n    cursor: pointer;\n    width: ", ";\n    height: 58px;\n    line-height: 17px;\n    display: grid;\n    grid-template-columns: 1fr 44px;\n    align-items: center;\n    border: none;\n    border-radius: 58px;\n    transition: 0.3s;\n  \n    &:hover {\n      background-color: ", ";\n      color: ", ";\n      box-shadow: 5px 5px ", ";\n    }\n"])), function (props) { return props.color; }, theme.typography.button.sizes.text, function (props) { return props.background; }, function (props) { return props.color; }, theme.typography.button.font, theme.typography.button.weight, function (props) { return props.icon && !props.text ? "58px" : "254px"; }, function (props) { return props.hoverBackground; }, function (props) { return props.hoverColor; }, function (props) { return props.background; });
+var templateObject_1;
+//# sourceMappingURL=Button.styling.js.map

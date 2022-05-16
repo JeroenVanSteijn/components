@@ -1,0 +1,21 @@
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+import React from "react";
+import styled from "styled-components";
+import { Paragraph } from "../Typography";
+var Container = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    position: relative;\n    width: ", ";\n"], ["\n    position: relative;\n    width: ", ";\n"])), function (props) { return props.width ? props.width + "px" : "100%"; });
+var TextBalloonContainer = styled.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    padding: 20px 20px 0;\n    background-color: #fff;\n    position: relative;\n    bottom: 10px;\n    left: 0;\n    z-index: 1;\n    border-top-left-radius: 10px;\n    border-top-right-radius: 10px;\n    border-top: 2px solid #000;\n    border-left: 2px solid #000;\n    border-right: 2px solid #000;\n    box-shadow: 3px 3px #253A8F40;\n"], ["\n    padding: 20px 20px 0;\n    background-color: #fff;\n    position: relative;\n    bottom: 10px;\n    left: 0;\n    z-index: 1;\n    border-top-left-radius: 10px;\n    border-top-right-radius: 10px;\n    border-top: 2px solid #000;\n    border-left: 2px solid #000;\n    border-right: 2px solid #000;\n    box-shadow: 3px 3px #253A8F40;\n"])));
+var TextBalloonBottom = styled.div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n    width: calc(100% - 4px);\n    height: 15px;\n    background-color: #fff;\n    border-bottom-left-radius: 10px;\n    border-bottom-right-radius: 10px;\n    border-left: 2px solid #000;\n    border-right: 2px solid #000;\n    border-bottom: 2px solid #000;\n    box-shadow: 3px 3px #253A8F40;\n    position: absolute;\n    bottom: -7px;\n    left: 0;\n    z-index: 1;\n\n    :before {\n        content: '';\n        position: absolute;\n        bottom: 0;\n        right: 43px;\n        width: 0;\n        height: 0;\n        border: 20px solid transparent;\n        border-top-color: #fff;\n        border-bottom: 0;\n        border-left: 0;\n        margin-left: -20px;\n        margin-bottom: -20px;\n        z-index: 3;\n    }\n    :after {\n        content: '';\n        position: absolute;\n        bottom: 0;\n        right: 40px;\n        width: 0;\n        height: 0;\n        border: 25px solid transparent;\n        border-top-color: #000;\n        border-bottom: 0;\n        border-left: 0;\n        margin-left: -20px;\n        margin-bottom: -25px;\n        z-index: 2;\n    }\n"], ["\n    width: calc(100% - 4px);\n    height: 15px;\n    background-color: #fff;\n    border-bottom-left-radius: 10px;\n    border-bottom-right-radius: 10px;\n    border-left: 2px solid #000;\n    border-right: 2px solid #000;\n    border-bottom: 2px solid #000;\n    box-shadow: 3px 3px #253A8F40;\n    position: absolute;\n    bottom: -7px;\n    left: 0;\n    z-index: 1;\n\n    :before {\n        content: '';\n        position: absolute;\n        bottom: 0;\n        right: 43px;\n        width: 0;\n        height: 0;\n        border: 20px solid transparent;\n        border-top-color: #fff;\n        border-bottom: 0;\n        border-left: 0;\n        margin-left: -20px;\n        margin-bottom: -20px;\n        z-index: 3;\n    }\n    :after {\n        content: '';\n        position: absolute;\n        bottom: 0;\n        right: 40px;\n        width: 0;\n        height: 0;\n        border: 25px solid transparent;\n        border-top-color: #000;\n        border-bottom: 0;\n        border-left: 0;\n        margin-left: -20px;\n        margin-bottom: -25px;\n        z-index: 2;\n    }\n"])));
+var TextBalloon = function (_a) {
+    var text = _a.text, width = _a.width;
+    return React.createElement(Container, { width: width },
+        React.createElement(TextBalloonContainer, null,
+            React.createElement(Paragraph, { text: text, size: "small" })),
+        React.createElement(TextBalloonBottom, null));
+};
+export default TextBalloon;
+3;
+var templateObject_1, templateObject_2, templateObject_3;
+//# sourceMappingURL=TextBalloon.js.map

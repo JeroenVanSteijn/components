@@ -1,0 +1,15 @@
+import { IconComponent } from "../icons";
+export declare const Book: IconComponent;
+export declare const Cars: IconComponent;
+export declare const Eye: IconComponent;
+export declare const Envelope: IconComponent;
+export declare const Handshake2: IconComponent;
+export declare const PeopleArrows: IconComponent;
+export declare const Train: IconComponent;
+export declare const Minus: IconComponent;
+export declare const Plus: IconComponent;
+export declare const Handshake: IconComponent;
+export declare const List: IconComponent;
+export declare const Tracking: IconComponent;
+export declare const DeveloperMode: IconComponent;
+export declare const PencilAndRuler: IconComponent;

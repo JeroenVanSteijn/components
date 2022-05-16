@@ -55,13 +55,6 @@
     "build:storybook": "build-storybook -s ./src",
     "build:storybook:ci": "yarn build:storybook -o public/storybook"
   },
-  "peerDependencies": {
-    "lint:fix": "eslint . --fix",
-    "next": "11.1.2",
-    "react": "17.x",
-    "react-dom": "17.x",
-    "styled-components": "5.x"
-  },
   "devDependencies": {
     "@babel/cli": "7.15.7",
     "@babel/core": "7.15.8",
@@ -102,8 +95,8 @@
     "jest": "27.3.1",
     "jest-environment-jsdom": "27.3.1",
     "lint-staged": "11.2.3",
+    "next": "11.1.2",
     "prettier": "2.4.1",
-    "react-dom": "17.0.2",
     "react-router-dom": "5.3.0",
     "react-scripts": "4.0.3",
     "react-select-event": "5.3.0",
@@ -112,6 +105,9 @@
     "yup": "0.32.11"
   },
   "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.1",
     "hamburger-react": "2.4.1",
     "module-alias": "2.2.2",
     "styled-normalize": "8.0.7",
