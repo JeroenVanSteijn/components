@@ -1,10 +1,7 @@
 import { ThemeColors } from "../../theme";
 import { ReactNode } from "react";
 import { UserPictureProps } from "../../components/UserPictures/UserPicture.types";
-export declare enum DeviceTypes {
-    laptop = "laptop",
-    iphone = "iphone"
-}
+export declare type DeviceTypes = "laptop" | "iphone";
 export declare type CaseIntroProps = {
     title: string;
     subtitle: string;

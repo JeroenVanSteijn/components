@@ -6,7 +6,6 @@ import React from "react";
 import { Heading, InitialContainer, LaptopScreen, Paragraph, Subtitle } from "../../../components";
 import styled from "styled-components";
 import { breakpointNameToPx, responsiveValuesCSS } from "../../../helpers";
-import { DeviceTypes } from "../SingleCasePage.types";
 import Image from "next/image";
 var TextColumn = function (_a) {
     var title = _a.title, subtitle = _a.subtitle, text = _a.text;
@@ -28,7 +27,7 @@ var imageColumnContainerResponsiveCSS = function () {
     }));
     return paddingTop + paddingBottom;
 };
-var ImageColumnContainer = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\t", ";\n\tbackground: url(", ") no-repeat right top , ", ";\n\tbackground-size: 80% auto;\n\tdisplay: grid;\n\tgrid-templates-columns: auto;\n\tgrid templates-rows: 1fr auto;\n\talign-items: end;\n"], ["\n\t", ";\n\tbackground: url(", ") no-repeat right top , ", ";\n\tbackground-size: 80% auto;\n\tdisplay: grid;\n\tgrid-templates-columns: auto;\n\tgrid templates-rows: 1fr auto;\n\talign-items: end;\n"])), imageColumnContainerResponsiveCSS, "/images/case-header-line.svg", function (props) { return props.bgColor; });
+var ImageColumnContainer = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\t", ";\n\tbackground: url(", ") no-repeat right top , ", ";\n\tbackground-size: 80% auto;\n\tdisplay: grid;\n\tgrid-templates-columns: auto;\n\tgrid-templates-rows: 1fr auto;\n\talign-items: end;\n"], ["\n\t", ";\n\tbackground: url(", ") no-repeat right top , ", ";\n\tbackground-size: 80% auto;\n\tdisplay: grid;\n\tgrid-templates-columns: auto;\n\tgrid-templates-rows: 1fr auto;\n\talign-items: end;\n"])), imageColumnContainerResponsiveCSS, "/images/case-header-line.svg", function (props) { return props.bgColor; });
 var logoContainerResponsiveCSS = function () {
     var marginLeft = responsiveValuesCSS("margin-left", "px", breakpointNameToPx({
         xs: 20,
@@ -46,7 +45,7 @@ var LogoContainer = styled.div(templateObject_2 || (templateObject_2 = __makeTem
 var ImageColumn = function (_a) {
     var image = _a.image, logo = _a.logo, height = _a.height, width = _a.width, bgColor = _a.bgColor;
     var RenderImage = function () {
-        if (image.type === DeviceTypes.laptop)
+        if (image.type === "laptop")
             return React.createElement(LaptopScreen, { image: "/images/" + image.url, alt: "image of application", height: 210 });
         return React.createElement(Image, { src: "/images/" + image.url, alt: "image of application", width: 246, height: 372 });
     };

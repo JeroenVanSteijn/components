@@ -44,6 +44,7 @@ const MeetTheFoundersBox: React.FC<MeetTheFoundersBoxProps> = ({ title, paragrap
 	return (
 		<Link href={link}>
 			<Container>
+				{/* @ts-ignore */}
 				<TextBox>
 					<MaybeRenderUserPictures />
 					{title && <Heading type="h3" text={title} />}

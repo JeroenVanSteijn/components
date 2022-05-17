@@ -1,6 +1,2 @@
-export var DeviceTypes;
-(function (DeviceTypes) {
-    DeviceTypes["laptop"] = "laptop";
-    DeviceTypes["iphone"] = "iphone";
-})(DeviceTypes || (DeviceTypes = {}));
+export {};
 //# sourceMappingURL=SingleCasePage.types.js.map

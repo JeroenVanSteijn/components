@@ -1,8 +1,8 @@
 /// <reference types="react" />
-declare type LaptopScreenProps = {
+declare type PhoneScreenProps = {
     image: string;
     alt: string;
     height: number;
 };
-declare const LaptopScreen: ({ image, alt, height }: LaptopScreenProps) => JSX.Element;
-export default LaptopScreen;
+declare const PhoneScreen: ({ image, alt, height }: PhoneScreenProps) => JSX.Element;
+export default PhoneScreen;

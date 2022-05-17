@@ -79,6 +79,7 @@ const MembersContainer = styled(Container) <{ countItems: number }>`
 `;
 
 
+/* @ts-ignore */
 const CaseTeamMembers: React.FC = ({ children }) => {
 	const count = Children.count(children);
 

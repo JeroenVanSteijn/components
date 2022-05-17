@@ -14,7 +14,7 @@ export var Paragraph = function (_a) {
 export var Heading = function (_a) {
     var type = _a.type, text = _a.text, color = _a.color, className = _a.className;
     var Element = lookup[type];
-    //@ts-ignore
+    /* @ts-ignore */
     return React.createElement(Element, { className: className, color: color }, text);
 };
 var h1FontSizes = responsiveValuesCSS("font-size", "em", breakpointNameToPx(theme.typography.heading.sizes.h1));

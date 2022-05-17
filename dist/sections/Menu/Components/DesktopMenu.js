@@ -8,15 +8,18 @@ import Spacer from "../../../components/Spacer";
 import Logo from "../../../components/Branding";
 import { theme } from "../../../theme";
 import { MenuContainer } from "../../../components/Container";
+import Link from "next/link";
 var DesktopMenuContainer = styled(MenuContainer)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    display: grid;\n    grid-template-columns: 200px 1fr;\n\talign-items: center;\n    padding-top: 44px;\n\tz-index: 90;\n\twidth: 100%;\n\tbackground-color: rgba(255, 255, 255, .32);\n\n"], ["\n    display: grid;\n    grid-template-columns: 200px 1fr;\n\talign-items: center;\n    padding-top: 44px;\n\tz-index: 90;\n\twidth: 100%;\n\tbackground-color: rgba(255, 255, 255, .32);\n\n"])));
 var NavLinksContainer = styled.ul(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    display: flex;\n    gap: ", "px;\n    justify-content: end;\n"], ["\n    display: flex;\n    gap: ", "px;\n    justify-content: end;\n"])), theme.layout.gutter);
+var LogoContainer = styled.div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n\tcursor: pointer;\n"], ["\n\tcursor: pointer;\n"])));
 export var DesktopMenu = function (_a) {
     var navLinks = _a.navLinks;
     return (React.createElement(DesktopMenuContainer, null,
-        React.createElement("div", null,
-            React.createElement(Logo, { color: "black" })),
+        React.createElement(Link, { href: "/" },
+            React.createElement(LogoContainer, null,
+                React.createElement(Logo, { color: "black" }))),
         React.createElement(NavLinksContainer, null, navLinks.map(function (item) { return (React.createElement(item.Link, { key: item.name })); })),
         React.createElement(Spacer, null)));
 };
-var templateObject_1, templateObject_2;
+var templateObject_1, templateObject_2, templateObject_3;
 //# sourceMappingURL=DesktopMenu.js.map

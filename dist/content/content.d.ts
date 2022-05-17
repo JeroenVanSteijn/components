@@ -1,6 +1,7 @@
 import { MeetTheFoundersProps } from "src/sections/HomePage/MeetTheFounders/MeetTheFounders.types";
 import { Member } from "../containers";
 import { EmployeeName } from "./contentGenerics";
+import { DeviceTypes } from "../sections";
 export declare const employees: Member[];
 export declare const getEmployee: (name: EmployeeName) => Member | undefined;
 export declare const getEmployees: (names: EmployeeName[]) => Member[];
@@ -32,6 +33,7 @@ export declare type Case = {
     name: string;
     subtitle: string;
     image: string;
+    type: DeviceTypes;
 };
 export declare const cases: Case[];
 export declare const getRandomCase: () => string;

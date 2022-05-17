@@ -48,7 +48,7 @@ export var employees = [
         linkedIn: "https://www.linkedin.com/in/suzanne-de-vries-11b088149/",
     },
     {
-        name: "Nietsche the cat",
+        name: "Nietzsche the cat",
         jobTitle: "Sleeping & Cuddling",
         id: "nietzsche",
         about: "Miauw, I am Nietzsche. I am responsible for all the cuddles at Bytecode. The people working at Bytecode are not just my colleagues, but also my close friends! " +
@@ -96,27 +96,32 @@ export var cases = [
     {
         name: "airchip",
         subtitle: "No more queuing for a drink!",
-        image: "airchip__chargeup"
+        image: "airchip__chargeup",
+        type: "iphone"
     },
     {
         name: "dearly",
         subtitle: "Support for the loss of your loved one(s)",
-        image: "dearly__home"
+        image: "dearly__home",
+        type: "iphone"
     },
     {
         name: "STYR",
         subtitle: "Clear organisations and fair rewards",
-        image: "airchip__chargeup"
+        image: "styr__dashboard",
+        type: "laptop"
     },
     {
         name: "stamps",
         subtitle: "Enabling people to share their medical or health journey",
-        image: "stamps__landingpage"
+        image: "stamps__landingpage",
+        type: "iphone"
     },
     {
         name: "youngpwr",
         subtitle: "Work(s) for your future",
-        image: "stamps__landingpage"
+        image: "youngpwr__articles",
+        type: "laptop"
     },
 ];
 export var getRandomCase = function () { return cases[Math.floor(Math.random() * cases.length)].name; };
@@ -180,21 +185,6 @@ export var MeetTheFoundersData = [
                 shadowPosition: "top",
             }],
         link: "/case/styr"
-    },
-    {
-        company: "Dawny",
-        discription: "A platform specifically made to integrate the input of different wearables. Dawny is designed to make the sleep of the very elderly visible through patterns. These patterns can predict the likelihood of (night) falls.",
-        founders: [{
-                name: "daveschweitzer",
-                color: "darkGreen",
-                shadowPosition: "top",
-            },
-            {
-                name: "willysiegel",
-                color: "lightGreen",
-                shadowPosition: "bottom",
-            }],
-        link: "/case/dawny"
     },
     {
         company: "AirChip",
