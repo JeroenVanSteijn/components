@@ -16,7 +16,7 @@ const caseTeamMembersSectionResponsiveCSS = () => {
 		"px",
 		breakpointNameToPx({
 			xs: 30,
-			md: 60,
+			md: 80,
 		})
 	);
 
@@ -78,7 +78,7 @@ const MembersContainer = styled(Container) <{ countItems: number }>`
 	text-align: center;
 `;
 
-//@ts-ignore
+
 const CaseTeamMembers: React.FC = ({ children }) => {
 	const count = Children.count(children);
 

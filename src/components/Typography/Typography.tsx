@@ -54,7 +54,6 @@ export const Paragraph = ({  text, color, className, onClick, fontWeight, size }
 
 export const Heading = ({ type, text, color, className }: WithStyle<HeadingProps>) => {
 	const Element = lookup[type];
-	//@ts-ignore
 	return <Element className={className} color={color}>{text}</Element>;
 };
 
