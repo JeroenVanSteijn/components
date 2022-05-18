@@ -11,15 +11,21 @@ var styledContainerResponsiveCSS = function () {
         xs: "1fr",
         md: "1fr 1fr"
     }));
+    var maxWidth = responsiveValuesCSS("max-width", "%", breakpointNameToPx({
+        xs: "90",
+        lg: "80",
+        xl: "60",
+        xxl: "80"
+    }));
     var padding = responsiveValuesCSS("padding", "", breakpointNameToPx({
         xs: "60px 0",
         lg: "90px 0",
         xl: "120px 0",
         xxl: "150px 0"
     }));
-    return gridColumns + padding;
+    return gridColumns + maxWidth + padding;
 };
-var StyledContainer = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\t", ";\n\tmargin-left: auto;\n\tpadding: 60px 0;\n"], ["\n\t", ";\n\tmargin-left: auto;\n\tpadding: 60px 0;\n"])), styledContainerResponsiveCSS);
+var StyledContainer = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\t", ";\n\tmargin: 0 auto;\n"], ["\n\t", ";\n\tmargin: 0 auto;\n"])), styledContainerResponsiveCSS);
 var MainContainer = styled.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n\tdisplay: grid;\n\tposition: relative;\n"], ["\n\tdisplay: grid;\n\tposition: relative;\n"])));
 var QuoteText = styled(Heading)(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n\ttext-align: center;\n\tplace-self: center;\n"], ["\n\ttext-align: center;\n\tplace-self: center;\n"])));
 var CaseQuote = function (_a) {

@@ -13,7 +13,7 @@ var fullContainerResponsiveCSS = function () {
     }));
     return display;
 };
-var Container = styled(FullWidthContainer)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\tposition: relative;\n\t&:before{\n\t\tcontent: \"\";\n\t\tposition: absolute;\n\t\tbottom: 200px;\n\t\tleft: 0;\n\t\tbackground: url(", ") no-repeat left center;\n\t\twidth: 500px;\n\t\theight: 500px;\n\t\tz-index: -1;\n\t\t", ";\n\t}\n"], ["\n\tposition: relative;\n\t&:before{\n\t\tcontent: \"\";\n\t\tposition: absolute;\n\t\tbottom: 200px;\n\t\tleft: 0;\n\t\tbackground: url(", ") no-repeat left center;\n\t\twidth: 500px;\n\t\theight: 500px;\n\t\tz-index: -1;\n\t\t", ";\n\t}\n"])), "/images/case-qoute-portal.svg", fullContainerResponsiveCSS);
+var Container = styled(FullWidthContainer)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n\tposition: relative;\n\t&:before{\n\t\tcontent: \"\";\n\t\tposition: absolute;\n\t\tbottom: 200px;\n\t\tleft: 0;\n\t\tbackground: url(", ") no-repeat left center;\n\t\twidth: 500px;\n\t\theight: 500px;\n\t\tz-index: -1;\n\t\t", ";\n\t}\n"], ["\n\tposition: relative;\n\t&:before{\n\t\tcontent: \"\";\n\t\tposition: absolute;\n\t\tbottom: 200px;\n\t\tleft: 0;\n\t\tbackground: url(", ") no-repeat left center;\n\t\twidth: 500px;\n\t\theight: 500px;\n\t\tz-index: -1;\n\t\t", ";\n\t}\n"])), "/images/case-quote-portal.svg", fullContainerResponsiveCSS);
 var summmationBlockContainerResponsiveCSS = function () {
     var columns = responsiveValuesCSS("grid-template-columns", "", breakpointNameToPx({ xs: "1fr", md: "1fr 1fr" }));
     var gap = responsiveValuesCSS("grid-column-gap", "px", breakpointNameToPx({ xs: 50, xxl: 100 }));
